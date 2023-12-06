@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title> Games House</title>
+
+    <!-- Google Fonts - Robot-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<header>
+    <!-- Definição da barra de navegação -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-stilo-nav">
+        <section class="container py-3">
+            <a href="#" class="navbar-brand">
+                <img class="img-fluid" src="images/joystick_FILL0_wght400_GRAD0_opsz24.png" alt="Logo">
+                <span>House Games</span>
+            </a>
+            <!-- Criação do botão para representar o menu hamburguer -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Definição dos links do menu -->
+            <section class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#titulo-sob">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured-container">destaques </a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://twitter.com/santossscy">Contato</a></li>
+                </ul>
+            </section>
+        </section>
+    </nav>
+</header>
+
+<body>
+    <!-- Definição do Slider -->
+    <section class="container" id="slider-container">
+        <section class="carousel slide" id="slider" data-bs-interval="3000" data-bs-ride="carousel">
+            <section class="carousel-indicators">
+
+                <!-- Criação dos botões que representam as imagens-->
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true"
+                    aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </section>
+
+            <!-- Definição do conteúdo do carrousel -->
+            <section class="carousel-inner">
+                <section class="carousel-item active">
+                    <img src="images/imagem 1.jpg" alt="Imagem 1" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5></h5>
+                        <a href="https://www.techtudo.com.br/noticias/2023/10/the-last-of-us-2-remaster-rumor-aponta-para-nova-versao-do-game-no-ps5-edjogos.ghtml" class="btn btn-minhacor">The Last of Us 2 Remaster? 
+                            Clique aqui para saber mais.</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/imagem 2.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5></h5>
+                        <a href="https://www.playstation.com/pt-br/games/marvels-spider-man-2/" class="btn btn-minhacor">Spider-Man 2 já disponível com exclusividade no PlayStation 5.</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/imagem 3.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5></h5>
+                        <a href="https://www.terra.com.br/gameon/red-dead-redemption-2-faz-aniversario-e-entra-em-promocao-veja-precos,2a8eb783778fe9aff1486d4c26984a44lxvol3oq.html" class="btn btn-minhacor">Red Dead Redemption 2 faz aniversário e entra em promoção! Veja mais.</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/batman-arkham-knight-2.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5></h5>
+                        <a href="https://meups.com.br/noticias/nova-skin-batman-arkham-knight-the-batman/" class="btn btn-minhacor">Nova skin de Batman Arkham Knight faz homenagem ao filme “The Batman” veja sobre.</a>
+                    </section>
+                </section>
+            </section>
+
+            <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+              <i class="bi bi-chevron-compact-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-chevron-compact-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- Criação dos cards / banners-->
+        <section class="col-12 col-md-10 offset-1" id="mini-banners">
+            <section class="row">
+
+                <!-- Primeiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-cart4"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Far cry 6</h5> 
+                            <img src="images/jogosVenda1.jpg" alt="" id="cardsimg">
+                            <p class="card-text secondary-color">Entre no mundo cheio de adrenalina de uma guerrilha revolucionária atual. </p>
+                            <a href="https://store.steampowered.com/app/2369390/Far_Cry_6/" class="btn btn-dark">Compre agora!</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Segundo card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-cart4"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Watch dogs legion</h5>
+                            <img src="images/venda2.jpg" alt="" id="cardsimg">
+                            <p class="card-text secondary-color">Monte uma resistência enquanto luta à beira de um colapso.</p>
+                            <a href="https://store.steampowered.com/app/2239550/Watch_Dogs_Legion/" class="btn btn-dark">Compre agora!</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Terceiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-cart4"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Resident Evil Village</h5>
+                            <img src="images/venda3.jpg" alt="" id="cardsimg">
+                            <p class="card-text secondary-color">Vivencie o horror de sobrevivência como nunca na 8ª sequência.</p>
+                            <a href="https://store.steampowered.com/app/1196590/Resident_Evil_Village/" class="btn btn-dark">Compre agora!</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Quarto card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-cart4"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">The last of us</h5>
+                            <img src="images/venda4.jfif" alt="" id="cardsimg">
+                            <p class="card-text secondary-color">Conheça a história emocionante e os personagens inesquecíveis </p>
+                            <a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/" class="btn btn-dark">Compre agora!</a>
+                        </section>
+                    </section>
+                </section>
+
+                                <!-- Primeiro card -->
+                                <section class="col-12 col-md-3">
+                                    <section class="card text-center">
+                                        <i class="bi bi-cart4"></i>
+                                        <section class="card-body">
+                                            <h5 class="card-title primary-color">Red Dead Redemption </h5> 
+                                            <img src="images/vendo 5.jfif" alt="" id="cardsimg">
+                                            <p class="card-text secondary-color">A épica aventura de mundo aberto da Rockstar Games.</p>
+                                            <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" class="btn btn-dark">Compre agora!</a>
+                                        </section>
+                                    </section>
+                                </section>
+                
+                                <!-- Segundo card -->
+                                <section class="col-12 col-md-3">
+                                    <section class="card text-center">
+                                        <i class="bi bi-cart4"></i>
+                                        <section class="card-body">
+                                            <h5 class="card-title primary-color"> The Forest </h5>
+                                            <img src="images/venda6.jpg" alt="" id="cardsimg">
+                                            <p class="card-text secondary-color">Você se encontra em uma floresta misteriosa lutando para permanecer vivo contra uma sociedade de
+                                                 mutantes.  </p>
+                                            <a href="https://store.steampowered.com/app/242760/The_Forest/" class="btn btn-dark">Compre agora!</a>
+                                        </section>
+                                    </section>
+                                </section>
+                
+                                <!-- Terceiro card -->
+                                <section class="col-12 col-md-3">
+                                    <section class="card text-center">
+                                        <i class="bi bi-cart4"></i>
+                                        <section class="card-body">
+                                            <h5 class="card-title primary-color">  Grand Theft Auto V </h5>
+                                            <img src="images/vwnda7.jpg" alt="" id="cardsimg">
+                                            <p class="card-text secondary-color"> Resolva os problemas financeiros e faça o que você quiser em Los Santos.    </p>
+                                            <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" class="btn btn-dark">Compre agora!</a>
+                                        </section>
+                                    </section>
+                                </section>
+                
+                                <!-- Quarto card -->
+                                <section class="col-12 col-md-3">
+                                    <section class="card text-center">
+                                        <i class="bi bi-cart4"></i>
+                                        <section class="card-body">
+                                            <h5 class="card-title primary-color">Dayz</h5>
+                                            <img src="images/venda8.jfif" alt="" id="cardsimg">
+                                            <p class="card-text secondary-color">Uma terra arrasada por "zumbis", onde você compete com outros por recursos limitados.  </p>
+                                            <a href="https://store.steampowered.com/app/221100/DayZ/" class="btn btn-dark">Compre agora!</a>
+                                        </section>
+                                    </section>
+                                </section>
+
+                <!-- Final dos cards -->
+            </section>
+        </section>
+    </section>
+
+    <!-- Destaques -->
+    <!-- Container dos desatques -->
+    <section class="container" id="featured-container">
+        <section class="col-12">
+            <h2 class="title primary-color">Jogos em destaque</h2>
+            <p class="subtitle secondary-color">Conheça novos jogos, se aprofunda na gameplay.</p>
+        </section>
+
+        <!-- Início das imagens-->
+        <section class="col-12" id="featured-images">
+            <section class="row g-4">
+
+                <section class="col-12 col-md-4">
+                    <img src="images/imagem 1.1.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                    <a href="https://store.steampowered.com/app/1259420/Days_Gone/"><p>Categoria: ação, sobrevivencia.</p>
+                        <h3>Days Gone</h3> </a>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/imagem 2.2.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                       <a href="https://store.steampowered.com/app/730/CounterStrike_2/"> <p>Categoria: ação.</p>
+                        <h3>Counter-Strike 2</h3></a>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/iamgem 3.3.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                     <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/">   <p>Categoria: ação.</p>
+                        <h3>Cyberpunk 2077 </h3></a>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/imagem 4.4.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                       <a href="https://store.steampowered.com/app/1817190/Marvels_SpiderMan_Miles_Morales/"> <p>Categoria: ação.</p>
+                        <h3>Spider-Man: Miles Morales</h3></a>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/iamgem 5.5.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <a href="https://store.steampowered.com/app/2195250/EA_SPORTS_FC_24/"><p>Categoria: simulação, Esportes.</p>
+                            <h3>Fifa 2024</h3></a>
+                    </section>
+                </section>
+
+
+                <section class="col-12 col-md-4">
+                    <img src="images/iamgem 6.6.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                      <a href="https://store.steampowered.com/app/2050650/Resident_Evil_4/">  <p>Categoria: ação, Aventura.</p>
+                        <h3> Resident Evil 4</h3></a>
+                    </section>
+                </section>
+
+
+            </section>
+        </section>
+    </section>
+  
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <!-- Informações -->
+    <section class="col-12">
+        <h2 class="title primary-color"></h2>
+        <p class="subtitle-secondary-color"></p>
+    </section>
+
+    <footer class="container-fluid bg-dark-color" id="footer">
+        <section class="container">
+            <section class="row">
+                <!-- FOOTER TOP -->
+                <section class="col-12" id="footer-top">
+                    <section class="row justify-content-between">
+                        <section class="col-4">
+
+                            <button type="button" class="btn btn-minhacor" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">caixa de opiniões</button>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.4326686158374!2d-48.50747642379553!3d-20.93513287039582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bbe469e09506f1%3A0x336e767ffea97cdf!2sSesi-SP!5e0!3m2!1spt-BR!2sbr!4v1698428348911!5m2!1spt-BR!2sbr" 
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form>
+                                      <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <h2>
+                          
+                            </h2>
+                        </section>
+
+                        <section class="col-12 col-md-4" id="textojoia">
+                          
+                        </section>
+
+                        <section class="col-4" id="social-icons">
+                            <section class="container" id="info-container">
+                                <section class="col-12">
+                                    <h2 class="title primary-color-white" id="titulo-sob">Sobre nós</h2>
+                                    <p class="subtitle-secondary-color" id="sobre">
+                                        Nosso site de jogos são uma fonte 
+                                        importante de informação e entretenimento para os gamers.
+                                         Ele oferece uma variedade de conteúdo, incluindo notícias, análises, dicas e venda de jogos.
+                                        </p>
+                                </section>
+                        
+                                
+                        
+                           
+                            </section>
+                        <a href="https://www.instagram.com/santosscy_/"> <i class="bi bi-instagram"></i></a></i>
+                          <a href="https://twitter.com/santossscy"> <i class="bi bi-twitter"></i></a>  
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+</footer>
+
+                <!-- Bootstrap JS-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                    crossorigin="anonymous" defer></script>
+</body>
+
+</html>
+
